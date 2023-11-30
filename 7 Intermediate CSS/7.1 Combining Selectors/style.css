@@ -1,0 +1,34 @@
+/* Write your code here: */
+
+h1, h2 {
+    color: blueviolet;
+}
+
+/*
+child selector: 
+"apply property to the child of a certain type of element"
+*/
+.box > .done {
+    color: firebrick;
+}
+
+/*
+Previous one won't work due to nesting
+*/
+.box li {
+    color: blue;
+}
+
+/*
+Chain selector for specificity
+*/
+li.done {
+    color: seagreen;
+}
+
+/*
+Optional: Add a child selector
+*/
+ul p.done {
+    font-size: 0.5rem;
+}
