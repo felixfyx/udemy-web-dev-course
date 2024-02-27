@@ -17,9 +17,9 @@ cur = conn.cursor()
 # Debug
 print(os.getcwd())
 
-with open('./33 Postgres/flags.csv', 'r') as f:
+with open('./33 Postgres/countries.csv', 'r') as f:
     next(f) # Skip header row
-    cur.copy_expert('COPY flags FROM stdin WITH CSV', f)
+    cur.copy_expert('COPY countries FROM stdin WITH CSV', f)
 
 conn.commit()
 
