@@ -1,6 +1,8 @@
+import { Note } from "@mui/icons-material";
+
 function Header() {
     return <header className="header">
-        <h1>Keeper</h1>
+        <h1><Note />Keeper</h1>
     </header>;
 }
 
